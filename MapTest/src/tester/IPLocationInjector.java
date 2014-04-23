@@ -1,7 +1,5 @@
 package tester;
 
-import java.io.FileNotFoundException;
-import java.io.IOException;
 import java.net.UnknownHostException;
 import java.nio.charset.Charset;
 import java.util.ArrayList;
@@ -38,6 +36,7 @@ public class IPLocationInjector {
 
 		
 	}
+	@SuppressWarnings("unused")
 	private void readIP2RegionCode(){
 		try {
 			List<DBObject> DBDataList = new ArrayList<DBObject>();
@@ -63,6 +62,7 @@ public class IPLocationInjector {
 		}
 	}
 	
+	@SuppressWarnings("unused")
 	private void readRegion2LongAtt(){
 		List<DBObject> DBDataList = new ArrayList<DBObject>();
 		CsvReader Region2LongAttReader;
@@ -119,12 +119,15 @@ public class IPLocationInjector {
 			}
 	}
 	
+	@SuppressWarnings("resource")
 	public static void main(String args[]){
+		@SuppressWarnings("unused")
 		BaiduAppEngin BAE = new BaiduAppEngin();
 //		BAE.doGet(req, resp);
 		IPLocationInjector ili = new IPLocationInjector();
 		System.out.println(Long.valueOf("2147549184").intValue());
 		ili.initMongoDB();
+		@SuppressWarnings("unused")
 		Scanner cin=new Scanner(System.in);
 //		ili.readIP2RegionCode();
 		//ili.readRegion2LongAtt();

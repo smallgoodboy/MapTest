@@ -100,7 +100,8 @@ public class CheckBoxNodeRenderer implements TreeCellRenderer{
 
         return panel;
     }
-    private JPopupMenu createPopupMenu(final AbstractLayer layer) {
+    @SuppressWarnings("unused")
+	private JPopupMenu createPopupMenu(final AbstractLayer layer) {
         JMenuItem menuItem;
  
         //Create the popup menu.

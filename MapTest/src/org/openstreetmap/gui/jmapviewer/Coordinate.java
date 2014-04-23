@@ -17,7 +17,11 @@ import org.openstreetmap.gui.jmapviewer.interfaces.ICoordinate;
  *
  */
 public class Coordinate implements Serializable, ICoordinate {
-    private transient Point2D.Double data;
+    /**
+	 * 
+	 */
+	private static final long serialVersionUID = 9011357144487058517L;
+	private transient Point2D.Double data;
 
     public Coordinate(double lat, double lon) {
         data = new Point2D.Double(lon, lat);

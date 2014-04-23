@@ -1,13 +1,8 @@
 package tester;
 
-import java.io.IOException;
 import java.util.Arrays;
 
-import javax.servlet.ServletException;
 import javax.servlet.http.HttpServlet;
-import javax.servlet.http.HttpServletRequest;
-import javax.servlet.http.HttpServletResponse;
-
 import com.mongodb.BasicDBObject;
 import com.mongodb.DB;
 import com.mongodb.DBCollection;
@@ -18,6 +13,10 @@ import com.mongodb.MongoCredential;
 import com.mongodb.ServerAddress;
 public class BaiduAppEngin extends HttpServlet { 
  
+	/**
+	 * 
+	 */
+	private static final long serialVersionUID = 2525042511877670020L;
 	DBCollection mongoCollection;
 	public static void main(String args[]){
         try {

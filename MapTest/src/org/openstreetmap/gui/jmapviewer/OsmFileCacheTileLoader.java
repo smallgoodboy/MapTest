@@ -176,7 +176,8 @@ public class OsmFileCacheTileLoader extends OsmTileLoader implements CachedTileL
             }
         }
 
-        protected void loadOrUpdateTile() {
+        @SuppressWarnings("incomplete-switch")
+		protected void loadOrUpdateTile() {
             try {
                 URLConnection urlConn = loadTileFromOsm(tile);
                 if (tileFile != null) {

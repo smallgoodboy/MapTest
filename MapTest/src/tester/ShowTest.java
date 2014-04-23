@@ -5,22 +5,24 @@ import java.util.Scanner;
 
 import javax.swing.JFrame;
 
-import org.openstreetmap.gui.jmapviewer.Coordinate;
 import org.openstreetmap.gui.jmapviewer.JMapViewer;
 import org.openstreetmap.gui.jmapviewer.Layer;
 import org.openstreetmap.gui.jmapviewer.LayerGroup;
-import org.openstreetmap.gui.jmapviewer.MapMarkerCircle;
 import org.openstreetmap.gui.jmapviewer.MapMarkerDot;
-import org.openstreetmap.gui.jmapviewer.MapRectangleImpl;
 
 public class ShowTest extends JFrame{
-    public ShowTest(){
+    /**
+	 * 
+	 */
+	private static final long serialVersionUID = 5338749261119342052L;
+	public ShowTest(){
         setVisible(true);
         
         setSize(1500, 1000);
         setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
     }
-    public static void main(String args[]){
+    @SuppressWarnings("resource")
+	public static void main(String args[]){
         JMapViewer map = new JMapViewer();
         ShowTest st = new ShowTest();
         st.add(map);
